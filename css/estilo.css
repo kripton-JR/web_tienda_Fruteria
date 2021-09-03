@@ -1,0 +1,217 @@
+/* contenedor de la barra de navegacion */
+body{
+    background: #fff;
+}
+.barra_nav{
+    background: #fff;
+    text-align: end;
+    padding-right: 80px;
+    padding-top: 35px;
+    height: 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    
+    
+    /* poner barra de navegacion estatica */
+    /* position: fixed; */
+    /* width: 90%; */
+    /* z-index: 1000; */
+    
+}
+.barra_nav a{
+    padding-right: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* segundo contenedor  */
+.contenedor_header{
+    background: #2b2d40;
+    padding-top: 50px;
+    
+}
+.contenedor_img{
+    background: url(/img/vegetable-basket-349667_1920.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 90%;
+    margin: auto;
+}
+.contenedor_txt{
+    color: #fff;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-family:  cursive;
+}
+.contenedor_txt h1{
+    font-size: 50px;
+    /* font-family:  cursive; */
+    
+}
+button{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+/* tercer contenedor */
+.contenedor_dos{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    font-family:  cursive;
+}
+.nuestra_historia h2{
+    font-size: 40px;
+}
+.nuestra_historia .sub{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.nuestra_historia p{
+    font-size: 20px;
+}
+.nuestra_historia{
+    width: 50%;
+    height: auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+} 
+.imagen_nuestra_historia{
+    width: 50%;
+    height: auto;
+}
+.imagen_nuestra_historia img{
+    width: 600px;
+    height: 400;
+    padding:50px;
+}
+/* cuarto contenedor galeria de imagenes */
+
+.contenedor_imagenes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor_imagenes img{
+    box-sizing: border-box;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+}
+/* quinto contenedor */
+.contenedor_informacion{
+    text-align: center;
+    padding-top: 30px;
+    font-family:  cursive;
+    
+}
+.contenedor_informacion h3{
+    font-size: 30px;
+}
+.contenedor_informacion div{
+    padding-top: 40px;
+   
+}
+/* mapa */
+/* ultima seccion */
+.datos_contacto{
+    display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  font-family:  cursive;
+}
+.datos_contacto div{
+    text-align: center;
+    width: 33.33%;
+    height: auto;
+}
+.contacto h3{
+    font-size: 50px;
+}
+.contenedor_contacto h3 {
+    font-size: 40px;
+}
+.contenedor_horarios h3{
+    font-size: 40px;
+}
+.datos_contacto p{
+    font-size: 30px;
+}
+
+
+/* media queries para el responsive */
+
+@media screen and (max-width: 1300px){
+    .contenedor_dos{
+        width: 100%;
+    }
+    
+    .imagen_nuestra_historia{
+        width: 100%;
+        display: none;
+    }
+    
+    .nuestra_historia{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        box-sizing: border-box;
+        text-align: center;
+    } 
+
+
+    .imagen_nuestra_historia img{
+        width: 100%;
+        max-width: 360px;
+    }
+   .contenedor_horarios2,.contenedor_contacto2{
+        display: none;
+    }
+    .contenedor_imagenes img{
+        box-sizing: border-box;
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+    .contenedor_img{
+        background: url(/img/vegetable-basket-349667_1920.jpg);
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        margin: auto;
+    }
+    .contenedor_mapa{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor_txt{
+        color: #fff;
+        padding-left: 20px;
+        padding-bottom: 50px;
+        font-size: 20px;
+        font-family:  cursive;
+        box-sizing: border-box;
+    }
+    .contenedor_txt h1{
+        font-size: 30px; 
+    }
+    .barra_nav{
+        height: 10px;
+        /* width: 100%; */
+        margin: auto;
+        text-align: center;
+    }
+    .datos_contacto div{
+       box-sizing: border-box;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+}
